@@ -633,7 +633,7 @@ body{
     transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
   }
   .main__card:hover{
-      transform: scale(1.2) translateY(-5%);
+      transform: scale(1.1, 1.1);
   }
   .main__card:focus,
   .main__card:active{
