@@ -7,7 +7,6 @@
   let mediaAnimation = gsap.matchMedia();
   
    mediaAnimation.add("(min-width: 1456px)", () => { 
-  //type-face section start
   const tlStart = gsap.timeline({})
   tlStart.from('.sidebar-main', {
       duration: 1.5,

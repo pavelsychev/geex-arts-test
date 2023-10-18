@@ -632,12 +632,12 @@ body{
     position: relative;
     transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
   }
-  .main__cards .main__card:hover{
+  .main__card:hover{
       transform: scale(1.2) translateY(-5%);
   }
-  .main__cards .main__card:focus,
-  .main__cards .main__card:active{
-    transform: translateY(-40%) scale(1.1);
+  .main__card:focus,
+  .main__card:active{
+    transform: scale(1.1) translateY(-40%);
   }
 
   &__photo{
