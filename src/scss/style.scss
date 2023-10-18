@@ -15,7 +15,7 @@ body{
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scrollbar-color: #5E81F4 #FFFF;
+  scrollbar-color: #7c2b1e #FFFF;
   scrollbar-width: thin;
   &::-webkit-scrollbar {
     width: 10px;
@@ -254,7 +254,7 @@ body{
   transition: all 0.3s linear;
   &:hover,
   &:focus,
-  &:hover{
+  &:active{
     outline: 1px solid #FFFFFF;
     border-radius: 10px;
     padding: 0 10px;
@@ -630,16 +630,16 @@ body{
     grid-template-columns: 1fr;
     text-decoration: none;
     position: relative;
-    transition: all 0.3s linear;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
   }
-  .main__card:hover {
-    transform: scale(1.3, 1.3);
+  .main__cards .main__card:hover{
+      transform: scale(1.2) translateY(-5%);
   }
-  .main__card:focus,
-  .main__card:active{
-    transform: translateY(-100%) scale(1.3, 1.3);
+  .main__cards .main__card:focus,
+  .main__cards .main__card:active{
+    transform: translateY(-40%) scale(1.1);
   }
-  
+
   &__photo{
     width: 231px;
     height: 342px;
