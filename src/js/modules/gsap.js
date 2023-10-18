@@ -20,19 +20,19 @@
       stagger: 0.2,
       y: -100,
       ease: "back.out(1.5)"
-  }, '>')
+  })
   tlStart.from('.main__subtitle', {
     duration: 0.5,
     opacity: 0,
     y: 20,
     ease: "back.out(1.5)"
-}, '>')
+})
 tlStart.from('.header-main', {
     duration: 2,
     opacity: 0,
     y: 20,
     ease: "back.out(1.5)"
-}, '>')
+})
 const tlSecondPage = gsap.timeline({})
 
 tlSecondPage.from('.header-slider', {
