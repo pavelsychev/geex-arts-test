@@ -1111,6 +1111,21 @@ body {
   min-height: 894px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
+}
+
+.start {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
 }
 
 .expand-btn {
@@ -1643,7 +1658,7 @@ body {
   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 .main .main__card:hover {
-  transform: scale(1.2) translateY(-5%);
+  transform: scale(1.1, 1.1);
 }
 .main .main__card:focus,
 .main .main__card:active {
@@ -1798,6 +1813,12 @@ body {
   border: none;
 }
 
+@media (max-width: 1456px) {
+  .start {
+    align-items: start;
+    padding: 150px 0;
+  }
+}
 @media (max-width: 1210px) {
   .main__photo-slider {
     height: 590px;

@@ -8,6 +8,17 @@
   
    mediaAnimation.add("(min-width: 1456px)", () => { 
   const tlStart = gsap.timeline({})
+  tlStart.to('.start', {
+    duration: 2,
+    opacity: 1,
+})
+
+  tlStart.to('.start', {
+        duration: 3,
+        opacity: 0,
+        zIndex: 0,
+    })
+
   tlStart.from('.sidebar-main', {
       duration: 1.5,
       opacity: 0,
@@ -49,6 +60,19 @@ tlSecondPage.from('.sidebar-slider', {
 }, '<')
 })
 mediaAnimation.add("(max-width: 1456px)", () => {
+
+    const tlStart = gsap.timeline({});
+
+    tlStart.to('.start', {
+        duration: 2,
+        opacity: 1,
+    })
+    
+      tlStart.to('.start', {
+            duration: 3,
+            opacity: 0,
+            zIndex: 0,
+        })
 
     const iconsT = document.querySelectorAll('.card-main');
     iconsT.forEach(icon => {
