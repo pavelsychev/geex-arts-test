@@ -1432,7 +1432,7 @@ body {
   bottom: 0;
   padding: 20px 85px 0 105px;
   margin: 0 auto;
-  z-index: 998;
+  z-index: 997;
 }
 .header__inner {
   display: flex;
@@ -1858,7 +1858,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 998;
     overflow-x: hidden;
     width: 313px;
     height: 100%;
