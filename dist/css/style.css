@@ -1107,10 +1107,8 @@ body {
   grid-template-columns: 271px 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: "sidebar header" "sidebar main";
-  max-width: 1470px;
   min-height: 894px;
   margin: 0 auto;
-  padding: 0 15px;
   position: relative;
 }
 
@@ -1857,7 +1855,7 @@ body {
     bottom: 95px;
   }
   .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
